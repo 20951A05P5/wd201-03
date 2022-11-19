@@ -7,14 +7,14 @@ const todoList = () => {
       all[index].completed = true
     }
   
-    const overdue = () => {
+    const overdue=() => {
       // Write the date check condition here and return the array of overdue items accordingly.
       // FILL YOUR CODE HERE
       // ..
       // ..
       // ..
       var i;
-      var overdue_lst = [];
+      var overdue_lst=[];
       for (i in all) {
         if (all[i].dueDate < today) {
           overdue_lst.push(all[i]);
@@ -23,14 +23,14 @@ const todoList = () => {
       return overdue_lst;
     }
   
-    const dueToday = () => {
+    const dueToday=() => {
       // Write the date check condition here and return the array of todo items that are due today accordingly.
       // FILL YOUR CODE HERE
       // ..
       // ..
       // ..
       var i;
-      var dueToday_lst = [];
+      var dueToday_lst=[];
       for (i in all) {
         if (all[i].dueDate === today) {
           dueToday_lst.push(all[i]);
@@ -39,14 +39,14 @@ const todoList = () => {
       return dueToday_lst;
     }
   
-    const dueLater = () => {
+    const dueLater=() => {
       // Write the date check condition here and return the array of todo items that are due later accordingly.
       // FILL YOUR CODE HERE
       // ..
       // ..
       // ..
       var i;
-      var dueLater_lst = [];
+      var dueLater_lst=[];
       for (i in all) {
         if (all[i].dueDate > today) {
           dueLater_lst.push(all[i]);
